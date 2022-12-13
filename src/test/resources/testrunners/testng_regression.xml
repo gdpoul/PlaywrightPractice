@@ -9,22 +9,8 @@
 
 	</listeners>
 
-	<test name="Open Cart Home Page Test_Chrome">
+<!-- 	<test name="Open Cart Home Page Test_Chrome">
 		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.qa.opencart.tests.HomePageTest" />
-		</classes>
-	</test>
-
-	<test name="Open Cart Login Page Test_Firefox">
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
-		</classes>
-	</test>
-	
-	<test name="Open Cart Home Page Test_Chromium">
-		<parameter name="browser" value="chromium" />
 		<classes>
 			<class name="com.qa.opencart.tests.HomePageTest" />
 		</classes>
@@ -36,6 +22,7 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
+-->	
 
 
 </suite>
