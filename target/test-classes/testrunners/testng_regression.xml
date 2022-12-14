@@ -9,7 +9,7 @@
 
 	</listeners>
 
-<!-- 	<test name="Open Cart Home Page Test_Chrome">
+ 	<test name="Open Cart Home Page Test_Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.tests.HomePageTest" />
@@ -22,7 +22,5 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
--->	
-
 
 </suite>
