@@ -5,13 +5,12 @@
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Open Cart Login Page Test_Firefox(failed)" verbose="4">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chromium"/>
     <classes>
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
           <include name="forgotPwdLinkWxistTest"/>
           <include name="setup"/>
-          <include name="appLoginTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->

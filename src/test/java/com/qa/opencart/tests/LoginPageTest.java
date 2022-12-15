@@ -15,12 +15,13 @@ public class LoginPageTest extends BaseTest {
 		System.out.println("page actual title is: "+actualLoginPageTitle);
 		Assert.assertEquals(actualLoginPageTitle, AppConstants.LOGIN_PAGE_TITLE);
 	}
-	
+
 	@Test(priority = 2)
 	public void forgotPwdLinkWxistTest() {
 		Assert.assertTrue(loginPage.isforgotPwdLinkExist());
 	}
-	
+
+		
 	@Test(priority = 3)
 	public void appLoginTest() {
 		boolean status = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
