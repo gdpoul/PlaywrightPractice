@@ -20,7 +20,8 @@ public class BaseTest {
 	protected HomePage homePage;
 	protected LoginPage loginPage;
 	
-	@Parameters({ "browser" })
+	
+	@Parameters("browser")
 	@BeforeTest
 	public void setup(String browserName) {
 		pf=new PlaywrightFactory();
