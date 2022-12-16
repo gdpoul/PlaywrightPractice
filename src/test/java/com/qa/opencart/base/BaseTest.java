@@ -21,16 +21,16 @@ public class BaseTest {
 	protected LoginPage loginPage;
 	
 	
-	@Parameters("browser")
+//	@Parameters("browser")
 	@BeforeTest
-	public void setup(String browserName) {
+	public void setup() {
 		pf=new PlaywrightFactory();
 		prop=pf.init_prop();
 		
-		if (browserName != null) {
-			prop.setProperty("browser", browserName);
-		}
-
+//		if (browserName != null) {
+//			prop.setProperty("browser", browserName);
+//		}
+//
 		page=pf.initBrowser(prop);
 		homePage=new HomePage(page);		
 	}
