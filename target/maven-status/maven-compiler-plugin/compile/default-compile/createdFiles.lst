@@ -1,6 +1,0 @@
-com\qa\opencart\pages\HomePage.class
-com\qa\opencart\pages\LoginPage.class
-com\qa\opncart\factory\PlaywrightFactory.class
-com\qa\opencart\pages\Test_Class.class
-com\qa\opencart\listeners\ExtentReportListener.class
-com\qa\opencart\constants\AppConstants.class
