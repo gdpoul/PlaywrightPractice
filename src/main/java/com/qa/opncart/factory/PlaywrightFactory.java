@@ -17,12 +17,12 @@ import com.microsoft.playwright.Playwright;
 public class PlaywrightFactory {
 	Playwright playwright;
 	Browser browser;
-	BrowserContext browserContext;
+	public static BrowserContext browserContext;
 	Page page;
 	Properties prop;
 
 	private static ThreadLocal<Browser> tlBrower= new ThreadLocal<>();
-	private static ThreadLocal<BrowserContext> tlbrowserContext= new ThreadLocal<>();
+	public static ThreadLocal<BrowserContext> tlbrowserContext= new ThreadLocal<>();
 	private static ThreadLocal<Page> tlpage= new ThreadLocal<>();	
 	private static ThreadLocal<Playwright> tlplaywright= new ThreadLocal<>();
 	

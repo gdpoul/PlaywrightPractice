@@ -27,4 +27,5 @@ public class LoginPageTest extends BaseTest {
 		boolean status = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertTrue(status);
 	}
+	
 }

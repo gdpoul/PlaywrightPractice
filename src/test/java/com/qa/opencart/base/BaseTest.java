@@ -1,5 +1,6 @@
 package com.qa.opencart.base;
 
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
@@ -7,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Tracing;
 import com.qa.opencart.pages.HomePage;
 import com.qa.opencart.pages.LoginPage;
 import com.qa.opncart.factory.PlaywrightFactory;
@@ -16,9 +18,9 @@ public class BaseTest {
 	PlaywrightFactory pf;
 	Page page;
 	
-	protected Properties prop;
-	protected HomePage homePage;
-	protected LoginPage loginPage;
+	public Properties prop;
+	public HomePage homePage;
+	public LoginPage loginPage;
 	
 	
 	@Parameters("browser")
@@ -32,11 +34,20 @@ public class BaseTest {
 		}
 
 		page=pf.initBrowser(prop);
-		homePage=new HomePage(page);		
+		homePage=new HomePage(page);
+		
+//		PlaywrightFactory.browserContext.
+//				tracing().start(new Tracing.StartOptions().
+//						setScreenshots(true).setSnapshots(true));
 	}
 	
 	@AfterTest
 	public void tearDown() {
+		
+//		PlaywrightFactory.browserContext.
+//		        tracing().stop(new Tracing.StopOptions().
+//		        		setPath(Paths.get("traceTest.zip")));
+
 		page.context().browser().close();
 	}
 
